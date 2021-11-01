@@ -1,0 +1,45 @@
+.form-register{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:2em;
+    .form__date{ 
+        margin-top:10px;
+        input{
+          border:1px solid #ccc;
+          width:100%;
+          height:3em;
+          color:#999 ; 
+          outline:none; 
+        }
+
+      }
+    .form__id{
+      display: flex;
+      align-items: center;
+      input.numero{
+        border-left:1px solid #ccc;
+      }
+      select{
+        height:100%;
+        font-size: 16px;
+        line-height: 1;
+        border: 0;
+        outline: 0;
+        background:white;
+        color: #2f80ed;
+
+      }
+        &:focus{
+          outline: none;
+        }
+        &::placeholder{
+          color: #2f80ed;
+          font-size: .5em;
+          margin-top: -.5em;
+          text-align: left;
+          padding-top:-2em;
+        }
+    }
+}

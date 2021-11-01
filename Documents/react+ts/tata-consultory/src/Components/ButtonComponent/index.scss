@@ -1,0 +1,50 @@
+@import '~@styles/globals.scss';
+.c_button{
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    user-select: none;
+    outline: 0;
+
+    padding: 12px 30px;
+
+    background: $color-blue center;
+    color: white;
+    transition: background 0.8s;
+
+    &:active{
+        background-color: $color-blue-20;
+        background-size: 100%;
+        transition: background 0s;
+    }
+
+    &[disabled]{
+        background-color: $color-gray;
+        color: white;
+        pointer-events: none;
+        transition: none;
+    }
+}
+
+.c_button__spin{
+    text-align: center;
+    @include loader($size:15px,$border-size: 5px,$color:white);
+    margin: 3px
+}
+
+.c_button__SizeXsmall{
+    padding: 7px 19px;
+  
+    .c_button__text{
+      font-size: 14px;
+      line-height: 18px;
+    }
+  
+    .c_button__spin{
+        
+        @include loader($size:18px,$border-size: 5px,$color:white);
+    }
+  }
+

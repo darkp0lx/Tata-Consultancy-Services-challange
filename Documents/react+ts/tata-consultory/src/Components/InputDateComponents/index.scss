@@ -1,0 +1,34 @@
+.date{
+    
+    &[type=date]::-webkit-datetime-edit-month-field{
+        -webkit-appearance: none;
+        display: none;
+    }
+    &[type=date]::-webkit-datetime-edit-day-field {
+        -webkit-appearance: none;
+        display: none;
+    }
+    &[type=date]::-webkit-datetime-edit-year-field {
+        -webkit-appearance: none;
+        display: none;
+    }
+}
+
+.c_input__wrapper__HasValue{
+    & .date::-webkit-calendar-picker-indicator{
+        display: initial;
+    }
+    & .date[type=date]::-webkit-datetime-edit-month-field{
+        -webkit-appearance: initial;
+        display: initial;
+    }
+    & .date[type=date]::-webkit-datetime-edit-day-field {
+        -webkit-appearance: initial;
+        display: initial;
+    }
+    & .date[type=date]::-webkit-datetime-edit-year-field {
+        -webkit-appearance: initial;
+        display: initial;
+    }
+}
+
