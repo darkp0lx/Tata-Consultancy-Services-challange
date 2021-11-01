@@ -29,19 +29,10 @@ npm start
 
 * react-router-dom: Paquete para el enrutamiento y navegación entre páginas
 
-```
-* classnames: Paquete que me permite juntar varias clases en una sola cadena
-```
-* formik: Paquete para manejar y validar formularios
-```
-* react-dropdown: Paquete para dropdowns personalizables
-
-```
-* validator: Paquete para validar cadenas, lo uso junto con formik
-
-```
 * axios: Paquete para manejar peticiones http a alguna API
 
-## *Librerías*
+* sass: Paquete para manejar los stylos con sass
+
+
 
 
