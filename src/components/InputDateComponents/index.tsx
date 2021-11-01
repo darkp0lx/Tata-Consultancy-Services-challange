@@ -40,12 +40,13 @@ const Component: React.FunctionComponent<iProps> = (props: iProps) => {
           name={props.model.name}
           required={props.model.isRequired || false}
           disabled={props.model.disabled || false}
-          value={value}
-          type={'date'}
+          /* value={value} */
+          type='date'
           onChange={handleChange}
           minLength={props.model.minLength}
           maxLength={props.model.maxLength}
-        ></input>
+          id='birthday'
+        />
         <label className='c_input__label e-text-regular'>{props.label}</label>
       </div>
     </div>

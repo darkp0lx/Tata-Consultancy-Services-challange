@@ -8,8 +8,11 @@
 .p_home__info{
     background: $color-blue;
     width: 50%;
+    height:80vh;
     display: flex;
-    position: relative;
+    position: sticky;
+    top:0;
+    left:0;
     justify-content: center;
     align-items: center;
     border-radius: 0 0 80px 0;
