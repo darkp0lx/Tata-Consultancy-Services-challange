@@ -1,0 +1,34 @@
+@import '~@styles/globals.scss';
+
+.c_wizard__step{
+    display: flex;
+    align-items: center;
+    & .c_wizard__step_title{
+        color: $color-gray;
+        margin: 0;
+        &__Blue{
+            color: $color-blue;
+        }
+    }
+    
+}
+
+.c_wizard__step_back_button{
+    background: none;
+    border: none;
+    height: 24px;
+    cursor: pointer;
+    & svg{
+        fill: $color-blue;
+        width: 24px
+    }       
+
+    &:disabled svg{
+        fill: $color-gray;
+        width: 24px 
+    }
+}
+
+.c_wizard__content{
+    margin: 32px 0;
+}

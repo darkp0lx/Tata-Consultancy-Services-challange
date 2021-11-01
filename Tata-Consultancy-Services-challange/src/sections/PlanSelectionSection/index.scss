@@ -1,0 +1,168 @@
+@import '~@styles/globals.scss';
+
+.s_plan_selection__option_plan{
+    margin: 32px 16px ;
+}
+
+.s_plan_selection__option_plan_mount{
+    margin: 0;
+    color: $color-dark-gray;
+    & small {
+       font-size: 1rem;
+       vertical-align: super;
+    }
+}
+
+.s_plan_selection__option_plan_name{
+    text-transform: uppercase;
+}
+
+.s_plan_selection__benefits{
+    border: 2px solid $color-gray;
+    border-radius: 15px;
+    margin: 32px 0;
+}
+
+.s_plan_selection__benefits_header{
+    background: $color-gray;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    text-align: center;
+    & p{
+        color: $color-dark-gray;
+        margin: 0;
+        padding: 16px;
+    }
+}
+
+.s_plan_selection__benefits_content{
+    padding: 16px 42px;
+}
+
+.s_plan_selection__benefits_cover{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $color-gray;
+}
+
+.s_plan_selection__benefits_cover_mount{
+    & p {margin: 12px 0;}
+}
+
+.s_plan_selection__benefits_cover_mount_badge{
+    background: $color-green;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 100px;
+    font-size: 12px;
+    text-align: center;
+    display: inline-flex;
+}
+
+.s_plan_selection__benefits_image{
+    width: 30%;
+    max-width: 120px;
+    padding-left: 32px;
+    border-left: 1px solid $color-gray;
+}
+
+.s_plan_selection__benefits_list{
+    list-style: none;
+    padding: 0;
+}
+
+.s_plan_selection__benefits_list_items{
+    display: flex;
+    align-items: center;
+    & svg{
+        width: 20px;
+        fill: $color-blue;
+    }
+
+    & p {
+        color: $color-dark-gray;
+        padding-left: 16px;
+
+        & span {
+            color : $color-gray;
+            font-size: 16px;
+        }
+    }
+
+    &.s_plan_selection__benefits_list_items__Disabled{
+        & svg{
+            width: 20px;
+            fill: $color-gray;
+        }
+    
+        & p {
+            color: $color-gray;
+            padding-left: 16px;
+            text-decoration: line-through;
+            & span {
+                color : $color-gray;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.s_plan_selection__services{
+    & > h4 {
+        color:$color-dark-gray;
+        padding-bottom: 16px;
+        border-bottom: 1px solid $color-gray;
+    }
+
+    & span{
+        color: $color-blue;
+    }
+    margin-bottom: 16px;
+}
+
+.s_plan_selection__services_summary::-webkit-details-marker {
+    display: none;
+}
+
+.s_plan_selection__services_detail {
+    border-bottom: 1px solid $color-gray;
+}
+
+.s_plan_selection__services_summary{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: $color-dark-gray;
+    cursor: pointer;
+   
+}
+
+.s_plan_selection__services_summary {
+    & svg{
+        fill: $color-blue;
+        width:20px;
+        height: 20px;
+        transition: .2s linear;
+    }
+}
+
+details[open] {
+    & span {
+        & svg {transform: rotate(180deg)}
+    }
+}
+
+.p_home__form_greetings{
+    & > * {
+        padding: 16px 0;
+    }
+
+}
+
+.p_home__form_greetings_button{
+    display: flex;
+    justify-content: flex-end;
+}

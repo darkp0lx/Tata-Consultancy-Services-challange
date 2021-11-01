@@ -1,0 +1,20 @@
+.p_home__info_list_item{
+    display: flex;
+    margin: 1rem 0;
+    
+    align-items: center;
+    &_icon{
+        height: 25px;
+        fill: white;
+    }
+    &_text{
+        color:white;
+        padding-left: 16px;
+    }
+}
+
+.p_home__form_title{
+    &__Blue{
+        color: $color-blue;
+    }
+}

@@ -1,0 +1,85 @@
+@import '~@styles/globals.scss';
+
+.c_input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid $color-gray;
+    border-radius: 5px;
+}
+
+.c_input__title{
+    font-size: 0.8rem;
+}
+
+.c_input__wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 8px;
+}
+
+
+.c_input__label{
+    position: absolute;
+    top: 10px;
+    pointer-events: none;
+    padding-left: 0.1rem;
+    z-index: 1;
+    color: $color-gray;
+    font-weight: normal;
+    transition: all 0.28s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 18px;
+    user-select: none;
+}
+
+.c_input__wrapper_field{
+    display: inline-block;
+    vertical-align: text-bottom;
+    background: none;
+    border-width: 0;
+    border-color: transparent;
+    outline: none;
+    width: 100%;
+    color: black;
+    box-shadow: none;
+    height: 20px;
+    padding-top: 22px;
+    font-size: 16px;
+    padding-left: 0;
+
+    &::placeholder{
+        color: transparent;
+    }
+
+    &:disabled{
+        color: rgba($color-gray, 0.6);
+    }
+}
+
+.c_input__wrapper_field:focus ~ .c_input__label,
+.c_input__wrapper__HasValue .c_input__label{
+    font-size: 13px;
+    top: 0;
+    left: 0;
+}
+
+.c_input__wrapper__IsInvalid{
+    .c_input__wrapper_field:focus ~ .c_input__label{
+      font-size: 14px;
+      color: red;
+      top: 0;
+      left: 0;
+    }
+    .c_input__wrapper_field ~ .c_input__label{
+      color: red !important;
+    }
+}

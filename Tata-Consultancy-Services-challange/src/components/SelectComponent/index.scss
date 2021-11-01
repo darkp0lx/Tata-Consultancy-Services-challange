@@ -1,0 +1,87 @@
+@import '~@styles/globals.scss';
+
+
+.c_select{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid $color-gray;
+    border-radius: 5px;
+    height: 60px;
+    position: relative;
+}
+
+.c_select__field{
+    cursor: pointer;
+    text-overflow: ellipsis;
+    border:none;
+    width: 70%;
+    height: 88%;
+    padding: 0 8px;
+    font-size: 16px;
+    &:disabled{
+      cursor: initial;
+      pointer-events: none;
+      ~ .c_select__icon_container .c_select__icon{
+        fill: rgba($color-gray, 0.6);
+      }
+    }
+  }
+  
+  .c_select__icon_container{
+    pointer-events: none;
+    position: absolute;
+    right: 8px;
+    top: calc(50% - 5px);
+    transition: .2s linear;
+
+    &.show {
+      top: calc(50% - 10px);
+      transform: rotate(-180deg);
+    }
+  }
+  
+  .c_select__icon{
+    height: 12px;
+    width: 12px;
+  }
+  
+  .c_select__dropdown{
+    position: absolute;
+    background: white;
+    top:51px;
+    z-index: 99;
+    width: calc(100% + 1px);
+    border: none;
+    display: none;
+    max-height: 300px;
+    overflow-y: auto;
+    &.c_select__dropdown_Show{
+      display: block
+    }
+  }
+  .c_select__dropdown_list{
+    padding: 0;
+    margin: 0;
+  }
+  
+  .c_select__dropdown_item{
+    padding: 11px 20px;
+    border: 1px solid #dbdee7;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+    &.c_select__dropdown_item_Selected{
+      background: white;
+      color: $color-blue;
+    }
+    &:hover{
+      background: white;
+      color: $color-gray;
+      transition: all .2s ease-in-out;
+    }
+  }

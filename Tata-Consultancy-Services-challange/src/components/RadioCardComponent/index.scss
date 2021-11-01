@@ -1,0 +1,146 @@
+@import '~@styles/globals.scss';
+
+.c_radio_card{
+    margin: 8px 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.c_radio_card__item{
+    position: relative;
+    border: 1px solid $color-gray;
+    flex-grow: 1;
+    border-radius: 10px;
+    margin: 8px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.c_radio_card__item_radio_input{
+    position: absolute; // take it out of document flow
+    opacity: 0;
+    z-index: 10000;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    & + span {
+        position: absolute;
+        padding: 0;
+        right: 10px;
+        top: 10px;
+        width: 20px;
+        color: $color-gray;
+    }
+    & + span:before {
+        content: '';
+        margin-right: 10px;
+        display: inline-block;
+        vertical-align: text-top;
+        width: 20px;
+        height: 20px;
+        border-radius:100%;
+        border: 1px solid $color-gray;
+        background: white;
+    }
+    &:hover + span:before {
+        background:$color-green;
+    }
+    &:focus + span:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+    }
+
+    &:checked + span:before {
+    background:$color-green;
+    }
+    
+    &:disabled + span {
+    color: #b8b8b8;
+    cursor: auto;
+    }
+
+    &:disabled + span:before {
+    box-shadow: none;
+    background: #ddd;
+    }
+
+    &:checked + span:after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    background: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    transform: rotate(45deg);
+    }
+}.c_radio_card__item_radio_input{
+    position: absolute; // take it out of document flow
+    opacity: 0;
+    z-index: 10000;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    & + span {
+        position: absolute;
+        padding: 0;
+        right: 10px;
+        top: 10px;
+        width: 20px;
+        color: $color-gray;
+    }
+    & + span:before {
+        content: '';
+        margin-right: 10px;
+        display: inline-block;
+        vertical-align: text-top;
+        width: 20px;
+        height: 20px;
+        border-radius:100%;
+        border: 1px solid $color-gray;
+        background: white;
+    }
+    &:hover + span:before {
+        background:$color-green;
+    }
+    &:focus + span:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+    }
+
+    &:checked + span:before {
+    background:$color-green;
+    }
+    
+    &:disabled + span {
+    color: #b8b8b8;
+    cursor: auto;
+    }
+
+    &:disabled + span:before {
+    box-shadow: none;
+    background: #ddd;
+    }
+
+    &:checked + span:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 
+        2px 0 0 white,
+        4px 0 0 white,
+        4px -2px 0 white,
+        4px -4px 0 white,
+        4px -6px 0 white,
+        4px -8px 0 white;
+    transform: rotate(45deg);
+    }
+}

@@ -1,0 +1,112 @@
+@import '~@styles/globals.scss';
+
+.p_home{
+    display: flex;
+    min-height: 100vh;
+}
+
+.p_home__info{
+    background: $color-blue;
+    width: 50%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 80px 0;
+    &_title{
+        color: white;
+    }
+    &:after{
+        content: '';
+        height: calc(100% - 80px);
+        width: 40px;
+        position: absolute;
+        left: 100%;
+        top:0;
+        background: linear-gradient(to top left,transparent 0,transparent 50%,$color-blue  0,$color-blue);
+    }
+}
+
+.p_home__info_wrapper{
+    width: 80%;
+}
+
+.p_home__info_list{
+    list-style: none;
+    padding: 0;
+    margin-top: 32px;
+}
+
+.p_home__info_list_item{
+    display: flex;
+    margin: 1rem 0;
+    
+    align-items: center;
+    &_icon{
+        height: 25px;
+        fill: white;
+    }
+    &_text{
+        color:white;
+        padding-left: 16px;
+    }
+}
+
+.p_home__form{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.p_home__form_wrapper{
+    width: 70%;
+}
+
+.p_home__form_input_group{
+    display: flex;
+    &_item{
+      &:first-of-type{
+          border-radius: 5px 0 0 5px;
+          border-right: none;
+          width: 40%;
+      } 
+      &:last-of-type{
+        border-radius: 0 5px 5px 0;
+    }  
+    }
+}
+
+.p_home__form_title{
+    &__Blue{
+        color: $color-blue;
+    }
+}
+
+.p_home__info_footer{
+    color: white;
+    position: absolute;
+    bottom:16px;
+}
+
+.p_home__form_wrapper_container{
+    margin-top: 32px;
+}
+
+.p_home__form_wrapper_container_check_link{
+    color: $color-gray;
+}
+
+@media screen and (min-width: $breakpoints-sm){
+
+}
+@media screen and (min-width: $breakpoints-md){
+
+}
+@media screen and (min-width: $breakpoints-lg){
+
+}
+@media screen and (min-width: $breakpoints-xl){
+
+}
