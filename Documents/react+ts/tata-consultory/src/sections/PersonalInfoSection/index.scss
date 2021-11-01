@@ -1,0 +1,12 @@
+@import '~@styles/globals.scss';
+
+.s_personal_info__title{
+    &__Blue{
+        color: $color-blue;
+    }
+}
+
+.s_personal_info__form_buttons{
+    display: flex;
+    justify-content: flex-end;
+}
