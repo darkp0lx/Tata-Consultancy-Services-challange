@@ -10,7 +10,8 @@ El cual tiene las siguientes características:
 * Grid System Layout
 * Código limpio y escalable
 * Consumo de API https://freestyle.getsandbox.com/dummy/obtenerdatospersona
-
+## Proyecto despleagado
+* Para el deploy use vercel y esta es la url:https://tata-consultancy-services-challange.vercel.app/
 
 ## Lanzar proyecto
 
