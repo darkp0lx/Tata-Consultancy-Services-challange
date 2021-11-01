@@ -28,6 +28,8 @@ export const ComponentLeft = () => {
                     </ul>
                     <small className="p_home__info_footer e-p6 e-text-light"> 2020 RIMAC Seguros y Reaseguros</small>
                 </div>
+         <img className="home__image" src="https://i.imgur.com/5jFVlAK.png"/>
+
             </div>
   )
 }

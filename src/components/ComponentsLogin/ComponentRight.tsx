@@ -1,23 +1,22 @@
 import { ContactModel } from '@models/ContactModel'
 import InputComponent from '@components/InputComponent'
-import InputDateComponent from '@components/InputDateComponents'
 import SelectComponent from '@components/SelectComponent'
-import CheckboxComponent from '@components/CheckboxComponent'
 import ButtonComponent from '@components/ButtonComponent'
-
-import PersonalInfoSection from '@sections/PersonalInfoSection'
-import PlanSelectionSection from '@sections/PlanSelectionSection'
-
 import WizardComponent from '@components/WizardComponent'
+import CheckboxComponent from '@components/CheckboxComponent'
+import PersonalInfoSection from '@sections/PersonalInfoSection'
+import InputDateComponent from '@components/InputDateComponents'
+import PlanSelectionSection from '@sections/PlanSelectionSection'
 
 import PersonaServices, {
   iBodyRequest,
   iBodyResponse
 } from '@services/PersonaServices'
-import { DocumentTypeConstant } from '@helpers/DocumentTypeConstant'
-import { iOnChangeSelect } from '@helpers/FormValidatorHelper'
+
 import { OwnerInfoModel } from '@models/OwnerInfoModel'
+import { iOnChangeSelect } from '@helpers/FormValidatorHelper'
 import { PlanSelectionModel } from '@models/PlanSelectionModel'
+import { DocumentTypeConstant } from '@helpers/DocumentTypeConstant'
 import { useState } from 'react'
 const oDocumentTypeConstant = new DocumentTypeConstant()
 

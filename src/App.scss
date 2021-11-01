@@ -1,5 +1,6 @@
 @import '~@styles/typography.scss';
-
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
 .App{
     min-height: 100vh;
+    font-family: 'Fira Sans', sans-serif;
 }

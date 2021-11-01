@@ -1,11 +1,13 @@
 @import '~@styles/breakpoints.scss';
 
 .e-h1, .e-h2, .e-h3, .e-h4, .e-h5, .e-h6{
-  font-family: 'Lato', sans-serif;
+      font-family: 'Fira Sans', sans-serif;
+
 }
 
 .e-p1, .e-p2, .e-p3, .e-p4, .e-p5, .e-p6{
-  font-family: 'Lato', sans-serif;
+      font-family: 'Fira Sans', sans-serif;
+
 }
 
 .e-h1{ font-size: 42px; line-height: 46px; }
@@ -144,9 +146,19 @@
   text-decoration: underline;
 }
 
-.e-text-thin{ font-family: 'Lato', sans-serif; font-weight: 100; margin: 0; }
-.e-text-light{ font-family: 'Lato', sans-serif; font-weight: 300; margin: 0; }
-.e-text-regular{ font-family: 'Lato', sans-serif; font-weight: 400; margin: 0; }
-.e-text-bold{ font-family: 'Lato', sans-serif; font-weight: 700; margin: 0; }
-.e-text-black{ font-family: 'Lato', sans-serif; font-weight: 900; margin: 0; }
+.e-text-thin{ 
+    font-family: 'Fira Sans', sans-serif;
+   font-weight: 100; margin: 0; }
+.e-text-light{ 
+    font-family: 'Fira Sans', sans-serif;
+   font-weight: 300; margin: 0; }
+.e-text-regular{ 
+    font-family: 'Fira Sans', sans-serif;
+   font-weight: 400; margin: 0; }
+.e-text-bold{ 
+    font-family: 'Fira Sans', sans-serif;
+   font-weight: 700; margin: 0; }
+.e-text-black{ 
+    font-family: 'Fira Sans', sans-serif;
+   font-weight: 900; margin: 0; }
 .e-text-wrap{ word-wrap: break-word; }

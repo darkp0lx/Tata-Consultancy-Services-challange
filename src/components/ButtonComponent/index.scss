@@ -18,6 +18,8 @@
         background-color: $color-blue-20;
         background-size: 100%;
         transition: background 0s;
+        transition:transform .5s ease;
+        transform:scale(.9);
     }
 
     &[disabled]{
